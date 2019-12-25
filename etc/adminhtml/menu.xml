@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Koian_Banner::banner_manager" title="Banner Manager" module="Koian_Banner" resource="Koian_Banner::banner_manager" sortOrder="40" />
+        <add id="Koian_Banner::list_banner" title="List Banners" module="Koian_Banner" action="banner" resource="Koian_Banner::banner_manager" parent="Koian_Banner::banner_manager"/>
+        <add id="Koian_Banner::new_banner" title="New Banner" module="Koian_Banner" action="banner/index/new" resource="Koian_Banner::save" parent="Koian_Banner::banner_manager"/>
+    </menu>
+</config>
